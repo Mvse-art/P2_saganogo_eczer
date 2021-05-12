@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Regular';
+	src: url('Raleway/static/Raleway-Regular.ttf');
+}
+@font-face {
+	font-family: 'Bold';
+	src: url('Raleway/static/Raleway-Bold.ttf');
+}
+@font-face {
+	font-family: 'Italic';
+	src: url('Raleway/static/Raleway-Italic.ttf');
+}
+body
+{
+
+}
+h1
+{
+	font-family: 'Bold';
+	font-weight: 2em;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+nav li
+{
+	margin-right: 20px;
+}
+nav a
+{
+	font-size: 1.4em;
+	color: #0065FC
+}
+
+#foot
+{
+	display: flex;
+	justify-content: space-between;
+}
+#coco
+{
+	display: flex;
+	justify-content: space-between;
+}
+#hebergements
+{
+	display: flex;
+	justify-content: space-between;
+}
+#populaires
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+#boxe1
+{
+	display: flex;
+}
+#boxe2
+{
+	display: flex;
+
+}
+.conteneur
+{
+	display: flex;
+	background-color: grey;
+}
