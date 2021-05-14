@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Regular';
 	src: url('Raleway/static/Raleway-Regular.ttf');
@@ -10,14 +11,10 @@
 	font-family: 'Italic';
 	src: url('Raleway/static/Raleway-Italic.ttf');
 }
-body
-{
 
-}
 h1
 {
 	font-family: 'Bold';
-	font-weight: 2em;
 }
 nav ul
 {
@@ -33,39 +30,126 @@ nav a
 	font-size: 1.4em;
 	color: #0065FC
 }
+body
+{
+	font-family: 'Regular';
+	font-family: 'Bold';
+	font-family: 'Italic';
+}
+#petit
+{
+	display: flex;
+	justify-content: space-between;
+}
+.conteneur1
+{
+	display: flex;
+	justify-content: space-evenly;
+	background-color: grey;
 
+}
+
+#hebergements
+{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F2F2F2;
+	width: 65%;
+	justify-content: space-evenly;
+}
+#item 
+{
+	background-color: white;
+	height: 180px;
+	width: 250px;
+	padding: 5px;
+
+}
+#item img
+{
+	height: 70%;
+    width: 100%;
+ }
+
+#populaires
+{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F2F2F2;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 35%;
+	height: 60%;
+}
+
+ #item2
+{
+ 	background-color: white;
+	height: 180px;
+	width: 250px;
+	padding: 5px;
+ }
+
+#item2 img
+{
+	height: 70%;
+    width: 100%;
+}
+
+.titre
+{
+	  flex: 0 0 100%;
+
+}
+.soustitre
+{
+	  flex: 0 0 100%;
+
+}
+
+#activites
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: pink;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#vites
+{
+	display: flex;
+	background-color: white;
+	height: 180px;
+	width: 60px;
+}
+.act 
+{
+	background-color: white;
+	height: 130px;
+	width: 250px;
+}
+.act img
+{
+	height: 80%;
+    width: 100%;
+}
+.act1 
+{
+	background-color: white;
+	height: 260px;
+	width: 250px;
+}
+
+.act1 img
+{
+	background-color: white;
+	height: 210px;
+	width: 250px;
+}
 #foot
 {
 	display: flex;
 	justify-content: space-between;
-}
-#coco
-{
-	display: flex;
-	justify-content: space-between;
-}
-#hebergements
-{
-	display: flex;
-	justify-content: space-between;
-}
-#populaires
-{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-}
-#boxe1
-{
-	display: flex;
-}
-#boxe2
-{
-	display: flex;
-
-}
-.conteneur
-{
-	display: flex;
-	background-color: grey;
+	background-color: #F2F2F2;
 }
