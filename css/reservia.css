@@ -36,10 +36,30 @@ nav a
 	font-size: 1.4em;
 	color: #0065FC
 }
+a:link 
+{ 
+	text-decoration:none; 
+	color:black;
+} 
+a h3, .cd_item p, .conteneur_act_solo p
+{
+	font-family: 'Bold';
+	color: black;
+	
+}
+.cd_item p, .conteneur_act_solo p
+{
+	margin-left: 20px;
+	margin-top:2px;
+}
+.item2 h3, .item2 p, .item h3, .item p, .cd_item p, .conteneur_act_solo p,
+{
+	margin-top: 2px;
+
+}
 body
 {
-	font-family: 'Regular';
-	font-family: 'Bold';
+
 	font-family: 'Italic';
 	display: flex;
 	flex-direction: column;
@@ -49,9 +69,14 @@ body
 {
 	color: #0065FC;
 }
+.conteneurfas
+{
+	margin-left: 15px;
+}
 p
 { 
 	color: black;
+	font-weight: bold;
 }
 #body1
 {
@@ -62,9 +87,6 @@ p
 {
 	display: flex;
 	width: 100%;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	flex-direction: column;
 }
 #logo1
@@ -82,12 +104,19 @@ p
 	right:0;
 	top:0;
 }
+#conteneurtext
+{
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
 
 #conteneurrecherche
 {
 	display: flex;
 	width: 290px;
 	height: 35px;
+	margin-bottom: -5px;
+	margin-top: 15px;
 }
 #recherche,#button
 {
@@ -103,6 +132,7 @@ p
 	color: white;
 	width: 40%;
 }
+
 #icone
 {
 	border-radius: 10px 0 0 10px;
@@ -112,6 +142,18 @@ p
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#conteneurfiltre a:hover
+{
+	background-color: #DEEBFF;
+	border-radius: 20px;
+	transform: translateY(-10px);
+}
+
+#hautdroite a:hover
+{
+	background-color: #DEEBFF;
 }
 
 #recherche
@@ -132,7 +174,7 @@ p
 	border-radius: 20px;
 	border: 0.1px solid  lightgrey;
 	height: 35px;
-	width: 220px;
+	width: 195px;
 	display: flex;
 	align-items: center;
 }
@@ -150,12 +192,21 @@ p
 {
 	display: flex;
 	justify-content: space-between;
+	width: 70%;
+	margin-bottom: 30px;
 }
 
 #petit p
 {
 	margin-left: 15px;
 }
+#conteneurtext2
+{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
 #conteneur1
 {
 	display: flex;
@@ -182,9 +233,7 @@ p
 	border-radius: 20px;
 	margin: 5px;
 	box-shadow: 5px 5px 5px lightgrey;
-
 }
-
 .item img
 {
 	height: 70%;
@@ -192,7 +241,10 @@ p
 	border: 30px;
 	border-radius: 20px;
 }
-
+.item h3
+{
+	font-weight: bold;
+}
 #populaires
 {
 	justify-content: space-between;
@@ -201,6 +253,12 @@ p
 	justify-content: space-evenly;
 	flex-direction: column;
 	height: 625px;
+	border-radius: 10px;
+}
+#titrepop
+{
+	display: flex;
+	justify-content: space-between;
 }
 
 .item2
@@ -226,11 +284,19 @@ p
 .colone
 {
 	margin-left: 15px;
+	margin-top: 10px;
 	
 }
 #titre
 {
 	flex: 0 0 100%;
+	padding-left: 33px;
+    padding-top: 33px;
+}
+#titrepop
+{
+	padding-left: 01px;
+    padding-top: 33px;
 }
 .soustitre
 {
@@ -246,54 +312,82 @@ p
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	width: 100%;
-	height: 330px;
-}
-#vites
-{
-	display: flex;
-	background-color: white;
-	height: 180px;
-	width: 60px;
-}
-.act 
-{
-	background-color: white;
-	height: 130px;
-	width: 250px;
-	background-color: purple;
-}
-.act img
-{
-	height: 80%;
-	width: 100%;
-	border: 30px;
-	border-radius: 20px;
-
-}
-.act1 
-{
-	background-color: pink;
-	height: 290px;
-	width: 250px;
+	height: 550px;
 }
 
-.act1 img
+
+.conteneurdouble
 {
-	background-color: white;
+
+	width: 250px;
 	height: 90%;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.conteneurdouble img
+{
 	width: 100%;
 	border: 30px;
+	height: 30%;
 	border-radius: 20px;
 }
+
+.conteneur_act_solo
+{
+	width: 290px;
+	height: 90%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px lightgrey;
+}
+
+.conteneur_act_solo img{
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+	/* 1. coin en haut à gauche */
+	/* 2. coin en haut à droite */
+	/* 3. coin en bas à droite  */
+	/* 4. coin en bas à gauche  */
+	border-radius: 20px 20px 0px 0px;
+}
+
+.cd_item
+{
+	height: 45%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px lightgrey;
+
+}
+
+.cd_item img{
+	width: 250px;
+	height: 90%;
+	object-fit: cover;
+	/* 1. coin en haut à gauche */
+	/* 2. coin en haut à droite */
+	/* 3. coin en bas à droite  */
+	/* 4. coin en bas à gauche  */
+	border-radius: 20px 20px 0px 0px;
+}
+
+
 #foot
 {
 	display: flex;
-	justify-content: space-between;
 	background-color: #F2F2F2;
 	justify-content: space-evenly;
+	padding-top: 20px;
 }
-
-a:link 
-{ 
+#foot a:hover
+{
 	text-decoration:none; 
-} 
+	color:blue;
+}
+.footlink a
+{
+	color: black;
+}
