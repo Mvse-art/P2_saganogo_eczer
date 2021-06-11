@@ -1,3 +1,47 @@
+@font-face {
+	font-family: 'Regular';
+	src: url('../Raleway/static/Raleway-Regular.ttf');
+}
+@font-face {
+	font-family: 'Bold';
+	src: url('../Raleway/static/Raleway-Bold.ttf');
+}
+@font-face {
+	font-family: 'Italic';
+	src: url('../Raleway/static/Raleway-Italic.ttf');
+}
+
+h1
+{
+	font-family: 'Bold';
+	font-weight: bolder;
+}
+h2
+{
+	font-family: 'Bold';
+	font-weight: bolder;
+}
+nav a
+{
+	font-size: 1.4em;
+	color: #0065FC
+}
+a:link 
+{ 
+	text-decoration:none; 
+	color:black;
+} 
+a h3, .cd_item p, .conteneur_act_solo p
+{
+	font-family: 'Bold';
+	color: black;
+	
+}
+
+
+
+
+
 .wrapper
 {
 	display: flex;
@@ -13,31 +57,30 @@
 }
 .header
 {
-	background-color: pink;
-	height: 120px;
+	
 	display: flex;
 }
 
 .footer
 {
-	background-color: blue;
+	
 	order: 5;
 }
 
 .populaire
 {
-	background-color: yellow;
+	
 	flex: 1;
 	order:2;
 }
 .intro
 {
-	background-color: purple;
+	
 	order: 1;
 }
 .activitesmarseille
 {
-	background-color: green;
+	
 	order: 4;
 }
 
@@ -72,7 +115,6 @@
 	border-radius: 10px
 
 	text-align: left;
-	background-color: orange;
 	font-style: 24px;
 	order: 2;
 	flex:3;
@@ -90,7 +132,7 @@
 
 .item2
 {
-	background-color: white;
+	
 	width: 360px;
 	padding: 5px;
 	border: 30px;
@@ -131,7 +173,7 @@
 {
 	width: 100%;
 	border: 30px;
-	height: 30%;
+	height: 80%;
 	border-radius: 20px;
 }
 
@@ -160,11 +202,6 @@
 	width: 100%;
 	flex-direction: column;
 }
-#conteneurtext
-{
-	margin-bottom: 5px;
-	margin-top: 30px;
-}
 
 #conteneurrecherche
 {
@@ -172,7 +209,6 @@
 	width: 290px;
 	height: 35px;
 	margin-bottom: -5px;
-	margin-top: 15px;
 }
 #recherche,#button
 {
@@ -254,7 +290,7 @@
 {
 	width: 100%
 }
-#log img
+#logo1 img
 {
 	height: 80px;
 	width: 180px;
@@ -292,7 +328,7 @@ nav a
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: purple;
+	
 }
 
 
@@ -303,32 +339,54 @@ nav a
 	height: 90%;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px lightgrey;
-	background-color: purple;
+	
 }
 
 
-.cd_item
-{
-	height: 45%;
-	border-radius: 20px;
-	box-shadow: 5px 5px 5px lightgrey;
-	background-color: orange;
-
-}
 
 .titre2
 {
 	flex: 0 0 100%;
 }
 
+#foot
+{
+	display: flex;
+	background-color: #F2F2F2;
+	justify-content: space-evenly;
+	padding-top: 20px;
+}
+#foot a:hover
+{
+	text-decoration:none; 
+	color:blue;
+}
+.footlink a
+{
+	color: black;
+}
+#hautdroite
+{
+	display: flex;
+	justify-content: space-between;
+}
 
+#conteneurtext2
+{
+	display: flex;
+	align-items: center;
+}
 
+#conteneurtext2 .fas
+{
+	margin: 10px;
+}
+#titrepop
+{
+	display: flex;
+	justify-content: space-between;
 
-
-
-
-
-
+}
 
 
 
@@ -345,6 +403,7 @@ nav a
 .header
 {
 	order: 1;
+	flex-wrap: wrap;
 }
 .intro
 {
@@ -363,6 +422,7 @@ nav a
 .activitesmarseille
 {
 	order: 5;
+
 }
 .footer
 {
@@ -388,13 +448,78 @@ ul
 	flex-direction: column;
 }
 
+.conteneur_act_solo 
+{
+	width: 100%;
+	height:190px;
+}
 
+.conteneurdouble
+{
+	width: 100%;
+	height: 100%;
+}
 
+#activites 
+{
+	height: auto;
+}
 
+.cd_item
+{
+	height: 190px;
+}
+.item
+{
+	width: 320px;
+}
+.conteneur_act_solo img
+{
+	height: 80%;
+}
+#foot
+{
+	flex-direction: column;
 
+}
+#hautdroite
+{
+	order: 3;
+	width: 100%;
 
-
-
+}
+#logo1
+{
+	width: 80%;
+}
+ul
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+#conteneurtext
+{
+	margin-top: 0;
+}
+#conteneurrecherche
+{
+	margin-top: 0;
+}
+#conteneurfiltre
+{
+	margin-top: 0;
+}
+#conteneurtext2
+{
+	margin-top: 0;
+	display: flex;
+}
+nav
+{
+	width: 100%;
+}
 
 
 
