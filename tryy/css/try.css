@@ -35,11 +35,17 @@ a h3, .cd_item p, .conteneur_act_solo p
 {
 	font-family: 'Bold';
 	color: black;
+}
+body
+{
+
+	font-family: 'Italic';
 	
 }
-
-
-
+.fas, .far
+{
+	color: #0065FC;
+}
 
 
 .wrapper
@@ -72,6 +78,7 @@ a h3, .cd_item p, .conteneur_act_solo p
 	
 	flex: 1;
 	order:2;
+	background-color: #F2F2F2;
 }
 .intro
 {
@@ -100,7 +107,8 @@ a h3, .cd_item p, .conteneur_act_solo p
 	height: 70%;
 	width: 100%;
 	border: 30px;
-	border-radius: 20px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 
@@ -113,7 +121,6 @@ a h3, .cd_item p, .conteneur_act_solo p
 	justify-content: space-evenly;
 	border: 30px;
 	border-radius: 10px
-
 	text-align: left;
 	font-style: 24px;
 	order: 2;
@@ -123,24 +130,29 @@ a h3, .cd_item p, .conteneur_act_solo p
 {
 	flex: 0 0 100%;
 	padding-left: 33px;
-    padding-top: 33px;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 .soustitre
 {
 	flex: 0 0 100%;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .item2
 {
 	
 	width: 360px;
-	padding: 5px;
 	border: 30px;
 	border-radius: 20px;
-	margin: 5px;
 	box-shadow: 5px 5px 5px lightgrey;
 	display: flex;
-	height: 140px;
+	height: 160px;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: white;
 }
 
 .item2 img
@@ -148,7 +160,8 @@ a h3, .cd_item p, .conteneur_act_solo p
 	height: 100%;
 	width: 50%;
 	border: 30px;
-	border-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
 .cd_item
 {
@@ -208,7 +221,7 @@ a h3, .cd_item p, .conteneur_act_solo p
 	display: flex;
 	width: 290px;
 	height: 35px;
-	margin-bottom: -5px;
+	margin-bottom: 5px;
 }
 #recherche,#button
 {
@@ -243,9 +256,15 @@ a h3, .cd_item p, .conteneur_act_solo p
 }
 #hautdroite a:hover
 {
-	background-color: #DEEBFF;
+
+	border-top : 1px solid blue;
 }
 
+
+#conteneurrecherche >.iconeeach
+ {
+ 	display: none;
+ }
 #recherche
 {
 	width: 50%;
@@ -264,7 +283,7 @@ a h3, .cd_item p, .conteneur_act_solo p
 	border-radius: 20px;
 	border: 0.1px solid  lightgrey;
 	height: 35px;
-	width: 195px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -272,19 +291,25 @@ a h3, .cd_item p, .conteneur_act_solo p
 {
 	border-radius: 20px;
 	background-color: #DEEBFF;
-	width: 20%;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 10px;
+	margin-right: 10px;
+}
+.haut2
+{
+	margin-right: 10px;
 }
 #conteneurfiltre
 {
 	display: flex;
 	justify-content: space-between;
-	width: 70%;
+	width: 50%;
 	margin-bottom: 30px;
+	align-items: center;
 }
+
 
 #logo1
 {
@@ -318,7 +343,6 @@ nav a
 	height: 550px;
 }
 
-
 .conteneurdouble
 {
 
@@ -331,8 +355,6 @@ nav a
 	
 }
 
-
-
 .conteneur_act_solo
 {
 	width: 290px;
@@ -341,8 +363,6 @@ nav a
 	box-shadow: 5px 5px 5px lightgrey;
 	
 }
-
-
 
 .titre2
 {
@@ -355,11 +375,13 @@ nav a
 	background-color: #F2F2F2;
 	justify-content: space-evenly;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #foot a:hover
 {
 	text-decoration:none; 
 	color:blue;
+
 }
 .footlink a
 {
@@ -385,15 +407,30 @@ nav a
 {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: 20px;
 
 }
+.conteneurfas
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
 
-
-
-
-
-
-
+.colone
+{
+	margin-left: 10px;
+	margin-top: 25px;
+}
+.tritreact
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.colone p
+{
+	margin-bottom: 30px;
+}
 
 
 
@@ -442,16 +479,15 @@ nav a
 #conteneurrecherche
 {
 	width: 100%;
+	margin-top: 0;
 }
-ul
-{
-	flex-direction: column;
-}
+
 
 .conteneur_act_solo 
 {
 	width: 100%;
 	height:190px;
+	margin-bottom: 20px;
 }
 
 .conteneurdouble
@@ -468,6 +504,7 @@ ul
 .cd_item
 {
 	height: 190px;
+	margin-bottom: 20px;
 }
 .item
 {
@@ -486,6 +523,7 @@ ul
 {
 	order: 3;
 	width: 100%;
+	margin-top: 30px;
 
 }
 #logo1
@@ -494,8 +532,6 @@ ul
 }
 ul
 {
-	display: flex;
-	flex-direction: row;
 	width: 100%;
 	justify-content: space-between;
 }
@@ -503,13 +539,12 @@ ul
 {
 	margin-top: 0;
 }
-#conteneurrecherche
-{
-	margin-top: 0;
-}
+
 #conteneurfiltre
 {
 	margin-top: 0;
+	align-items: flex-start;
+	height: 210px;
 }
 #conteneurtext2
 {
@@ -520,6 +555,49 @@ nav
 {
 	width: 100%;
 }
+#foot > div
+{
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.footlink
+{
+	width: 100%;
+	height: 100px;
+	justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+}
+#conteneurtext > h1
+{
+	font-size: 25px;
+}
+#filtre
+{
+	margin-bottom: 15px;
+}
+
+#conteneurrecherche > .iconeeach
+{
+	background-color: #0065FC;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+
+#conteneurrecherche > .button
+{
+	display: none;
+
+}
+.iconecache
+{
+	color: white;
+}
+
 
 
 
