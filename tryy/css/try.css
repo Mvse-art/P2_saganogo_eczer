@@ -48,14 +48,14 @@ body
 	font-family: 'Italic';
 	
 }
-.fas, .far
+.fas
 {
 	color: #0065FC;
 
 }
-.far
+.test
 {
-	color: #F2F2F2
+	color: lightgrey;
 }
 #inscrire
 {
@@ -96,6 +96,7 @@ body
 	flex: 1;
 	order:2;
 	background-color: #F2F2F2;
+	padding: 25px;
 }
 .intro
 {
@@ -112,7 +113,7 @@ body
 {
 	background-color: white;
 	height: 210px;
-	width: 255px;
+	width: 250px;
 	padding: 5px;
 	border: 30px;
 	border-radius: 20px;
@@ -161,7 +162,7 @@ body
 .item2
 {
 	
-	width: 310px;
+	
 	border: 30px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px lightgrey;
