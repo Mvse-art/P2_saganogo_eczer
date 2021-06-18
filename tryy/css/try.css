@@ -15,6 +15,7 @@ h1
 {
 	font-family: 'Bold';
 	font-weight: bolder;
+	font-size: 1.3em;
 }
 h2
 {
@@ -30,7 +31,8 @@ nav a
 a:link 
 { 
 	text-decoration:none; 
-	color:black;
+	color: #0065FC;
+	font-weight: bold;
 } 
 a h3, .cd_item p, .conteneur_act_solo p
 {
@@ -56,12 +58,6 @@ body
 .test
 {
 	color: lightgrey;
-}
-#inscrire
-{
-	font-weight: bold;
-	color: #0065FC;
-	text-decoration:none; 
 }
 
 .wrapper
@@ -417,6 +413,7 @@ nav a
 .titre2
 {
 	flex: 0 0 100%;
+	margin-bottom: 20px;
 }
 
 #foot
@@ -739,13 +736,29 @@ nav
 
 
 
+}
+
+@-moz-document url-prefix() 
+
+{
+  
+#conteneurtext
+{
+	margin-bottom: 30px;
+}
+
+#conteneurrecherche
+{
+	margin-bottom: 20px;
+
+}
+
 
 
 
 
 
 }
-
 
 
 
