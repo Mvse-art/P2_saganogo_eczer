@@ -8,7 +8,7 @@
 }
 @font-face {
 	font-family: 'Italic';
-	src: url('../Raleway/static/Raleway-Italic.ttf');
+	src: url('../raleway/static/Raleway-Italic.ttf');
 }
 
 h1
@@ -20,11 +20,12 @@ h2
 {
 	font-family: 'Bold';
 	font-weight: bolder;
+	font-size: 1.3em;
 }
 nav a
 {
 	font-size: 1.4em;
-	color: #0065FC
+	color: #0065FC;
 }
 a:link 
 { 
@@ -36,6 +37,11 @@ a h3, .cd_item p, .conteneur_act_solo p
 	font-family: 'Bold';
 	color: black;
 }
+
+#conteneurtext > p
+{
+	color: grey;
+}
 body
 {
 
@@ -45,13 +51,24 @@ body
 .fas, .far
 {
 	color: #0065FC;
-}
 
+}
+.far
+{
+	color: #F2F2F2
+}
+#inscrire
+{
+	font-weight: bold;
+	color: #0065FC;
+	text-decoration:none; 
+}
 
 .wrapper
 {
 	display: flex;
 	flex-flow: row wrap;
+	margin-inline:50px;
 	
 }
 .wrapper > *
@@ -94,8 +111,8 @@ body
 .item 
 {
 	background-color: white;
-	height: 235px;
-	width: 250px;
+	height: 210px;
+	width: 255px;
 	padding: 5px;
 	border: 30px;
 	border-radius: 20px;
@@ -124,7 +141,7 @@ body
 	text-align: left;
 	font-style: 24px;
 	order: 2;
-	flex:3;
+	flex:2;
 }
 #titre
 {
@@ -144,28 +161,28 @@ body
 .item2
 {
 	
-	width: 360px;
+	width: 310px;
 	border: 30px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px lightgrey;
 	display: flex;
-	height: 160px;
+	height: 135px;
 	padding: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 	background-color: white;
 }
 
 .item2 img
 {
 	height: 100%;
-	width: 50%;
+	width: 40%;
 	border: 30px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
 .cd_item
 {
-	height: 45%;
+	height: 40%;
 	border-radius: 20px;
 	box-shadow: 5px 5px 5px lightgrey;
 
@@ -182,12 +199,30 @@ body
 	/* 4. coin en bas à gauche  */
 	border-radius: 20px 20px 0px 0px;
 }
+.cd_item1
+{
+	height: 55%;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px lightgrey;
+
+}
+
+.cd_item1 img
+{
+	width: 250px;
+	height: 90%;
+	object-fit: cover;
+	/* 1. coin en haut à gauche */
+	/* 2. coin en haut à droite */
+	/* 3. coin en bas à droite  */
+	/* 4. coin en bas à gauche  */
+	border-radius: 20px 20px 0px 0px;
+}
 .conteneurdouble img
 {
 	width: 100%;
 	border: 30px;
 	height: 80%;
-	border-radius: 20px;
 }
 
 .conteneur_act_solo
@@ -235,7 +270,8 @@ body
 	background-color: #0065FC;
 	font-weight: bold;
 	color: white;
-	width: 40%;
+	width: 35%;
+	border: black;
 }
 #icone
 {
@@ -247,7 +283,14 @@ body
 	align-items: center;
 	justify-content: center;
 }
-
+#icone > .fas
+{
+	color: black;
+}
+input::placeholder
+{
+	color: black;
+}
 #conteneurfiltre a:hover
 {
 	background-color: #DEEBFF;
@@ -270,6 +313,8 @@ body
 	width: 50%;
 	border-bottom: 0.1px solid lightgrey;
 	border-top: 0.1px solid lightgrey;
+	font-weight: bold;
+	padding-left: 10px;
 }
 
 #trouve
@@ -286,6 +331,7 @@ body
 	width: 100%;
 	display: flex;
 	align-items: center;
+	color: black;
 }
 .haut1
 {
@@ -305,9 +351,11 @@ body
 {
 	display: flex;
 	justify-content: space-between;
-	width: 50%;
+	width: 55%;
 	margin-bottom: 30px;
 	align-items: center;
+	font-weight: bold;
+	color: black;
 }
 
 
@@ -317,13 +365,14 @@ body
 }
 #logo1 img
 {
-	height: 80px;
-	width: 180px;
+	height: 50px;
+	width: 100px;
 }
 nav ul
 {
 	list-style-type: none;
 	display: flex;
+	font-size: 0.8em;
 }
 nav li
 {
@@ -334,6 +383,7 @@ nav a
 	font-size: 1.4em;
 	color: #0065FC
 }
+
 #activites
 {
 	display: flex;
@@ -352,7 +402,6 @@ nav a
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	
 }
 
 .conteneur_act_solo
@@ -376,12 +425,30 @@ nav a
 	justify-content: space-evenly;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	height: 100px;
+	align-items: center;
 }
+.foot1
+{
+	display: flex;
+	flex-direction: column;
+	height: 90px;
+	justify-content: space-evenly;
+
+}
+
 #foot a:hover
 {
 	text-decoration:none; 
 	color:blue;
 
+}
+.footlink
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content:space-evenly;
 }
 .footlink a
 {
@@ -392,7 +459,10 @@ nav a
 	display: flex;
 	justify-content: space-between;
 }
-
+#conteneurtext > h1
+{
+	font-size: 1.4em;
+}
 #conteneurtext2
 {
 	display: flex;
@@ -402,6 +472,7 @@ nav a
 #conteneurtext2 .fas
 {
 	margin: 10px;
+	color: blue;
 }
 #titrepop
 {
@@ -414,23 +485,63 @@ nav a
 .conteneurfas
 {
 	margin-left: 10px;
-	margin-top: 10px;
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 55px;
+}
+.conteneurfas > .etoile
+{
+	font-size: 12px;
+}
+.colone > .etoile
+{
+	font-size: 12px;
 }
 
 .colone
 {
-	margin-left: 10px;
-	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 120px;
+	margin-left: 5px;
+	margin-top: 10px;
+
 }
+
 .tritreact
 {
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 19%;
+}
+.tritreact1
+{
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 9%;
 }
 .colone p
 {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
+h3
+{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+
+
+
+
 
 
 
@@ -480,6 +591,7 @@ nav a
 {
 	width: 100%;
 	margin-top: 0;
+	margin-bottom: 20px;
 }
 
 
@@ -506,6 +618,11 @@ nav a
 	height: 190px;
 	margin-bottom: 20px;
 }
+.cd_item1
+{
+	height: 190px;
+	margin-bottom: 20px;
+}
 .item
 {
 	width: 320px;
@@ -517,6 +634,10 @@ nav a
 #foot
 {
 	flex-direction: column;
+	height: 100%;
+	margin-bottom: -20px;
+	align-items: stretch;
+
 
 }
 #hautdroite
@@ -568,14 +689,7 @@ nav
 	display: flex;
 	flex-direction: column;
 }
-#conteneurtext > h1
-{
-	font-size: 25px;
-}
-#filtre
-{
-	margin-bottom: 15px;
-}
+
 
 #conteneurrecherche > .iconeeach
 {
@@ -597,6 +711,28 @@ nav
 {
 	color: white;
 }
+.wrapper
+{
+	margin-inline:5px;
+}
+#icone
+{
+	height: 44px;
+	width: 40px;
+}
+#recherche
+{
+	height: 40px;
+	width: 70%
+}
+
+.iconeeach
+{
+	width: 11%;
+	height: 24px;
+}
+
+
 
 
 
