@@ -31,8 +31,7 @@ nav a
 a:link 
 { 
 	text-decoration:none; 
-	color: #0065FC;
-	font-weight: bold;
+	color:black;
 } 
 a h3, .cd_item p, .conteneur_act_solo p
 {
@@ -58,6 +57,12 @@ body
 .test
 {
 	color: lightgrey;
+}
+#inscrire
+{
+	font-weight: bold;
+	color: #0065FC;
+	text-decoration:none; 
 }
 
 .wrapper
@@ -413,7 +418,7 @@ nav a
 .titre2
 {
 	flex: 0 0 100%;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #foot
@@ -534,6 +539,23 @@ h3
 	font-weight: bold;
 	font-size: 1em;
 }
+.fa-chart-line
+{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -564,6 +586,7 @@ h3
 {
 	order: 4;
 	flex:100%;
+	background-color: white;
 }
 .activitesmarseille
 {
@@ -656,7 +679,7 @@ ul
 }
 #conteneurtext
 {
-	margin-top: 0;
+	margin-top: 30px;
 }
 
 #conteneurfiltre
@@ -729,6 +752,15 @@ nav
 	width: 11%;
 	height: 24px;
 }
+
+.wrapper > *
+{
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+}
+
+
 
 
 
