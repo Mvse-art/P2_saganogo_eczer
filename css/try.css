@@ -47,7 +47,8 @@ body
 {
 
 	font-family: 'Italic';
-	
+	max-width: 1500px;
+	margin:auto;
 }
 .fas
 {
@@ -139,7 +140,7 @@ body
 	width: 100%;
 	justify-content: space-evenly;
 	border: 30px;
-	border-radius: 10px
+	border-radius: 10px;
 	text-align: left;
 	font-style: 24px;
 	order: 2;
@@ -303,8 +304,8 @@ input::placeholder
 {
 
 	border-top : 1px solid blue;
-}
 
+}
 
 #conteneurrecherche >.iconeeach
  {
@@ -475,7 +476,7 @@ nav a
 #conteneurtext2 .fas
 {
 	margin: 10px;
-	color: blue;
+	color: #0065FC;
 }
 #titrepop
 {
@@ -668,6 +669,12 @@ h3
 	margin-top: 30px;
 
 }
+#haudroite a:hover
+{
+	border-top: none;
+	border-bottom: 1px solid blue;
+}
+
 #logo1
 {
 	width: 70%;
