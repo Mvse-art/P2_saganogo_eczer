@@ -32,6 +32,9 @@ a:link
 { 
 	text-decoration:none; 
 	color:black;
+	
+}
+
 } 
 a h3, .cd_item p, .conteneur_act_solo p
 {
@@ -616,8 +619,6 @@ h3
 	margin-top: 0;
 	margin-bottom: 20px;
 }
-
-
 .conteneur_act_solo 
 {
 	width: 100%;
@@ -660,20 +661,12 @@ h3
 	height: 100%;
 	margin-bottom: -20px;
 	align-items: stretch;
-
-
 }
 #hautdroite
 {
 	order: 3;
 	width: 100%;
 	margin-top: 30px;
-
-}
-#haudroite a:hover
-{
-	border-top: none;
-	border-bottom: 1px solid blue;
 }
 
 #logo1
@@ -772,20 +765,32 @@ nav
 	font-size: 1.5em;
 	margin-top: 20Px;
 }
+#hautdroite a:hover
+{
 
+	border-top : none;
+	border-bottom: 1px solid blue;
+
+}
 
 
 }
 
-@media all and (min-width: 778px) and (max-width: 1500px)
+@media all and (min-width: 770px) and (max-width: 1100px)
 {
 	#conteneurfiltre
 	{
-		width: 60%;
+		width: 100%;
 	}
 }
 
-
+@media all and (min-width: 1100px) and (max-width: 1500px)
+{
+	#conteneurfiltre
+	{
+		width: 70%;
+	}
+}
 
 
 @-moz-document url-prefix() 
